@@ -139,7 +139,7 @@ h = max_y - min_y
 for i in range(h+1):
 	line = ''
 	for j in range(w+1):
-		p = (j + min_x, i + min_y)
+		p = (j + min_x, max_y - i)
 		if p in panels:
 			line += ' #' if panels[p] == 1 else ' .'
 		else:
